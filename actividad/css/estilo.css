@@ -1,0 +1,368 @@
+body{
+    background-color: rgb(112, 171, 189);
+    font-family: Arial, Helvetica, sans-serif;
+}
+#cabecera{
+    clip-rule: 125px;
+    background-color: rgb(13, 15, 90); 
+    
+}
+#cabecera img{
+    width: 10%;
+}
+#nombreSitio{
+    font-size: 1.3em;
+    color: rgb(240, 243, 243);
+    text-align: center;
+    font-weight: bold;
+  
+    
+}
+ #menu{
+    float: right;
+ }
+
+ #menu ul {
+    list-style: none; 
+    display: flex;
+    padding: 1px;
+    justify-content: space-between;
+ }
+
+#menu ul li a{
+   color: rgb(248, 248, 243);
+   font-size: 75%;
+   text-decoration: none;
+   padding: 25px;
+}
+
+#menu ul li a:hover{
+    font-size: 1;
+    color: aqua;
+
+}
+#tituloPrincipal{
+    text-align: center;
+    color: rgb(57, 59, 59);
+}
+.izquierda {
+    float: left;
+    width: 30%;
+}
+.derecha{
+    float: right;
+    width: 30%;
+
+}
+
+footer{
+    clear: both;
+    text-align: right;
+    height: 30%;
+    background-color: rgb(13, 15, 90); 
+    color: rgb(236, 236, 230);
+    padding: 1px 50% 5px;
+}
+img{
+    width: 50%;
+    
+}
+
+table{
+    border: 5% solid black;
+    border-collapse: collapse;
+    margin: auto;
+}
+td{
+    padding: 1em;
+    border: 1px solid black;
+}
+thead{
+    background-color: rgb(233, 231, 154) ;
+    color: rgb(1, 20, 20)
+}
+tbody td:first-child{
+    background-color: rgb(74, 205, 238);
+}
+tbody tr:nth-child(2n){
+    background-color: rgb(50, 135, 205);
+}
+tbody tr:nth-child(2n+1){
+    background-color: beige;
+}
+
+.plantilla{
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 400px;
+    background: rgb(180, 168, 236);
+    border-radius: 10px;
+}
+.plantilla h4{
+    text-align: center;
+    padding: 0 0 20px 0;
+    border-bottom: 3px solid rgb(240, 237, 237);
+
+}
+.plantilla form{
+    padding: 0 40px;
+    box-sizing: border-box;
+
+}
+form .nombre{
+    position: relative;
+    border-bottom: 2px solid rgb(238, 237, 237);
+    margin: 30px 0;
+}
+.nombre input{
+    width: 100%;
+    padding: 0 5px;
+    height: 40px;
+    font-size: 16px;
+    border: none;
+    background: none;
+    outline: none;
+}
+.nombre label{
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    color: white;
+    transform: translateY(-50%);
+    font-size: 15px;
+    pointer-events: none;
+}
+.nombre span::before{
+    content: '';
+    position:absolute;
+    top: 40px;
+    left: 0;
+    width: 100%;
+    height: 2px;
+    background: violet;
+}
+.nombre input:focus ~ label,
+.nombre input:focus ~ label{
+    top: -5px;
+    color: rgb(32, 32, 32);
+}
+.nombre input:focus ~ span::before,
+.nombre input:focus ~ span::before{
+    width: 100%;
+
+}
+form .apellido{
+    position: relative;
+    border-bottom: 2px solid rgb(238, 237, 237);
+    margin: 30px 0;
+}
+.apellido input{
+    width: 100%;
+    padding: 0 5px;
+    height: 40px;
+    font-size: 15px;
+    border: none;
+    background: none;
+    outline: none;
+}
+.apellido label{
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    color: white;
+    transform: translateY(-50%);
+    font-size: 16px;
+    pointer-events: none;
+}
+.apellido input:focus ~ label,
+.apellido input:focus ~ label{
+    top: -5px;
+    color: rgb(32, 32, 32);
+}
+.apellido input:focus ~ span::before,
+.apellido input:focus ~ span::before{
+    width: 100%;
+
+}
+form .email{
+    position: relative;
+    border-bottom: 2px solid rgb(238, 237, 237);
+    margin: 30px 0;
+}
+.email input{
+    width: 100%;
+    padding: 0 5px;
+    height: 40px;
+    font-size: 15px;
+    border: none;
+    background: none;
+    outline: none;
+}
+.email label{
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    color: white;
+    transform: translateY(-50%);
+    font-size: 16px;
+    pointer-events: none;
+}
+.email input:focus ~ label,
+.email input:focus ~ label{
+    top: -5px;
+    color: rgb(32, 32, 32);
+}
+.email input:focus ~ span::before,
+.email input:focus ~ span::before{
+    width: 100%;
+
+}
+
+form .fechaN{
+    position: relative;
+    border-bottom: 2px solid rgb(238, 237, 237);
+    margin: 30px 0;
+}
+.fechaN input{
+    width: 100%;
+    padding: 0 5px;
+    height: 40px;
+    font-size: 15px;
+    border: none;
+    background: none;
+    outline: none;
+}
+.fechaN label{
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    color: white;
+    transform: translateY(-50%);
+    font-size: 16px;
+    pointer-events: none;
+}
+.fechaN input:focus ~ label,
+.fechaN input:focus ~ label{
+    top: -5px;
+    color: rgb(32, 32, 32);
+}
+.fechaN input:focus ~ span::before,
+.fechaN input:focus ~ span::before{
+    width: 100%;
+
+}
+form .usuario{
+    position: relative;
+    border-bottom: 2px solid rgb(238, 237, 237);
+    margin: 30px 0;
+}
+.usuario input{
+    width: 100%;
+    padding: 0 5px;
+    height: 40px;
+    font-size: 15px;
+    border: none;
+    background: none;
+    outline: none;
+}
+.usuario label{
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    color: white;
+    transform: translateY(-50%);
+    font-size: 16px;
+    pointer-events: none;
+}
+.usuario input:focus ~ label,
+.usuario input:focus ~ label{
+    top: -5px;
+    color: rgb(32, 32, 32);
+}
+.usuario input:focus ~ span::before,
+.usuario input:focus ~ span::before{
+    width: 100%;
+
+}
+form .contrasena{
+    position: relative;
+    border-bottom: 2px solid rgb(238, 237, 237);
+    margin: 30px 0;
+}
+.contrasena input{
+    width: 100%;
+    padding: 0 5px;
+    height: 40px;
+    font-size: 15px;
+    border: none;
+    background: none;
+    outline: none;
+}
+.contrasena label{
+    position: absolute;
+    top: 50%;
+    left: 5px;
+    color: rgb(233, 227, 227);
+    transform: translateY(-50%);
+    font-size: 16px;
+    pointer-events: none;
+}
+.contrasena input:focus ~ label,
+.contrasena input:focus ~ label{
+    top: -5px;
+    color: rgb(26, 25, 25);
+}
+.contrasena input:focus ~ span::before,
+.contrasena input:focus ~ span::before{
+    width: 100%;
+
+}
+.recordar{
+    margin: -5px 0 20 px 5px;
+    color: blue;
+    cursor: pointer;
+}
+
+.recordar :hover{
+    width: 100%;
+    height: 50px;
+    border: 1px solid;
+    background: violet;
+    border-radius: 25px;
+    font-size: 18px;
+    color: black;
+    cursor: pointer;
+    outline: none;
+}
+
+input[type="submit"]{
+    width: 100%;
+    height: 50px;
+    border: 4px solid;
+    background: violet;
+    border-radius: 25px;
+    font-size: 18px;
+    color: white;
+    cursor: pointer;
+    outline: none;
+}
+input[type="submit"]:hover{
+    border-color: purple;
+    transition: .5s;
+}
+.registrarse{
+    margin: 30px 0;
+    text-align: center;
+    font-size: 16px;
+    color: black;
+}
+
+.registrarse a{
+    color: blue;
+    text-decoration: none;
+}
+.registrarse a:hover{
+    text-decoration: underline
+}

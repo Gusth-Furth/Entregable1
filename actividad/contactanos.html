@@ -3,38 +3,63 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Im_Tecnologia_Web</title>
+    <link rel="stylesheet" href="css/estilo.css">
+    <title>Im_Tecnología_Web</title>
 </head>
 <body>
-    <header>
-        <nav>
+    <header id="cabecera">
+        <nav id="menu"> 
             <ul>
-               <li><a href="index.html">Inicio</a></li>
+               <li><a href="index.html">Início</a></li>
                <li><a href="obj_Vision_Mision.html">Objetivo</a></li>
-               <li><a href="fron-back.html">frontend and </a></li>
-               <li><a href="tecnologiasweb_actual.html">tecnologias</a></li>
-               <li><a href="retroalimentacion.html">estudios</a></li>
+               <li><a href="fron-back.html">Front-Back </a></li>
+               <li><a href="tecnologiasweb_actual.html">Tecnología</a></li>
+               <li><a href="retroalimentacion.html">Estudios</a></li>
                <li><a href="contactanos.html">Contacto</a></li>
-               
             </ul>
         </nav>
-        <h4>Llenar la plantilla </h4>
+        <img src="img/logo.png" alt="Tecnoline">
+        <span id="nombreSitio">TecnoLine</span>
     </header>
-    <form action="https://www.utpl.edu.ec">
-        <label for = "nombre">Nombre</label>
-        <input type="text" name="nombre" >
-        <label for="apellido">Apellido</label>
-        <input type="text" name = "apelldo"><br>
-        <br>
-        <label for="nombre">Email</label>
-        <input type="email" id= "nombre" name = "name">
-         <label for="fecha">Fecha Nacimiento</label>
-         <input type="date" name="fecha" id="fecha"><br>
-        <br>
-        <label for="text">Detalle aqui:</label>
-        <textarea name="mensaje" id="detalle"></textarea>
-        
-        <input type="submit" name="enviar" id="">
-    </form>
+    <div class="plantilla">
+        <h4>Llenar la plantilla </h4>    
+        <form action="https://www.utpl.edu.ec">
+            <div class="nombre">
+                <input type="text" name = nombre>
+                <label for="Ingrese su Nombre">Ingresar Nombre</label>
+            </div>
+            <div class="apellido">
+                <input type="text" name = "nombre">
+                <label for="Ingrese su Apellido">Ingresar apellido</label>
+            </div>
+            <div class="email">
+                <input type="text" id="nombre" name="name">
+                <label for="E-mail">E-mail</label>
+            </div>
+            <div class="fechaN">
+                <input type="date" name="fecha" id="fecha">
+                <label for="fecha">Fecha de nacimiento</label> 
+            </div>
+            <div class="usuario">
+                <input type="usuario" usuario="usuario">
+                <label for="Ingrese usuario">Usuario</label>
+            </div>
+            <div class="contrasena">
+                <input type="contrasena" contraseña="password">
+                <label for="contrasena">Contraseña</label>
+            </div>
+            <div class="recordar">¿Olvido se contraseña? </div>
+            <input type="submit" value="Iniciar">
+            <div class="registrarse">
+                Realizar <a href="#">Registro</a>
+            </div>
+            <div class="detalle">
+                <label for="mensaje"> Detalle aquí su problema:</label>
+                <textarea name="mensaje" name="Enviar"></textarea>
+                <input type="submit" name="Enviar" id="">
+            </div>
+
+        </form>
+    </div>
 </body>
 </html>
